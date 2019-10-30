@@ -23,11 +23,11 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::prefix('peoples')->group(function (){
-    Route::get('list','PeopleManager@index')->name('peoples.index');
-    Route::get('add','PeopleManager@add')->name('peoples.add');
-    Route::post('add','PeopleManager@create')->name('peoples.create');
-    Route::get('delete/{id}','PeopleManager@delete')->name('peoples.delete');
-    Route::get('edit/{id}','PeopleManager@edit')->name('peoples.edit');
-    Route::post('edit/{id}','PeopleManager@update')->name('peoples.update');
-    Route::get('search','PeopleManager@search')->name('peoples.search');
+    Route::get('list','PeopleManagerController@index')->name('peoples.index');
+    Route::get('add','PeopleManagerController@add')->name('peoples.add');
+    Route::post('add','PeopleManagerController@create')->name('peoples.create');
+    Route::get('delete/{id}','PeopleManagerController@delete')->name('peoples.delete');
+    Route::get('edit/{id}','PeopleManagerController@edit')->name('peoples.edit');
+    Route::post('edit/{id}','PeopleManagerController@update')->name('peoples.update');
+    Route::get('search','PeopleManagerController@search')->name('peoples.search');
 });

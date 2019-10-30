@@ -15,7 +15,7 @@
             <input type="text" class="form-control" name="age">
         </div>
         <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
+            <label>Country</label>
             <select class="form-control" name="country">
                 <option>Hà Nội</option>
                 <option>Bắc Ninh</option>
@@ -28,8 +28,17 @@
             <label>Image</label>
             <input type="file" name="image">
         </div>
+
+        @foreach($regions as $region)
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="{{$region->region_id}}" name="region">
+                <label class="form-check-label" for="{{$region->region_id}}">
+                    {{$region->region_Name}}
+                </label>
+            </div>
+        @endforeach
         <div class="form-group">
-           <button type="submit">Create</button>
+            <button type="submit">Create</button>
         </div>
     </form>
 @endsection

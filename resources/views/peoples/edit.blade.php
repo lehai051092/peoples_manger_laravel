@@ -30,6 +30,14 @@
             <label>Image NEW</label>
             <input type="file" name="image">
         </div>
+        @foreach($regions as $region)
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="{{$region->region_id}}" name="region">
+                <label class="form-check-label" for="{{$region->region_id}}">
+                    {{$region->region_Name}}
+                </label>
+            </div>
+        @endforeach
         <div class="form-group">
             <button type="submit">Update</button>
         </div>
