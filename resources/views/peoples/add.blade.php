@@ -4,7 +4,14 @@
         @csrf
         <div class="form-group">
             <label>Name</label>
-            <input type="text" class="form-control" name="name">
+            <input type="text" class="form-control" name="name"
+                   @if($errors->has('name'))
+                   style="border: solid red"
+                @endif
+            >
+            @if($errors->has('name'))
+                <p class="text-danger"><img src="https://img.icons8.com/cute-clipart/64/000000/warning-shield.png"> {{$errors->first('name')}}</p>
+            @endif
         </div>
         <div class="form-group">
             <label>Email</label>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\AddPeopleRequest;
 use App\People;
 use App\Region;
 use Illuminate\Http\Request;
@@ -36,7 +37,7 @@ class PeopleManagerController extends Controller
         return view('peoples.add', compact('regions', 'peoples'));
     }
 
-    public function create(Request $request)
+    public function create(AddPeopleRequest $request)
     {
         $image = $request->image;
         $path = 'public/images';

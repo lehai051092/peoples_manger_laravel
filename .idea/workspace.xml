@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aa86bd0-3b4a-453f-987d-dcc52bedf882" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RegionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Region.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_10_29_073134_create_regions_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_10_29_073440_add_collumn_region_to_peoples.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/PeopleTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/RegionTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/AddPeopleRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PeopleManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PeopleManagerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/People.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/People.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PeopleManagerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PeopleManagerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/peoples/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/peoples/add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/peoples/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/peoples/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/peoples/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/peoples/list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -171,8 +160,16 @@
       <workItem from="1572237878261" duration="8077000" />
       <workItem from="1572248682776" duration="8898000" />
       <workItem from="1572322935042" duration="14565000" />
-      <workItem from="1572397974766" duration="3672000" />
+      <workItem from="1572397974766" duration="6343000" />
     </task>
+    <task id="LOCAL-00001" summary="Add 1-n file">
+      <created>1572401910770</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572401910770</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,5 +190,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Add 1-n file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add 1-n file" />
   </component>
 </project>

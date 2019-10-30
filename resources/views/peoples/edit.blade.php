@@ -15,10 +15,10 @@
             <input type="text" class="form-control" name="age" value="{{$people->age}}">
         </div>
         <div class="form-group">
-            <label >Country</label>
+            <label>Country</label>
             <select class="form-control" name="country">
                 <option @if($people->country=="Hà Nội") selected @endif>Hà Nội</option>
-                <option  @if($people->country=="Bắc Ninh") selected @endif>Bắc Ninh</option>
+                <option @if($people->country=="Bắc Ninh") selected @endif>Bắc Ninh</option>
                 <option @if($people->country=="TP HCM") selected @endif>TP HCM</option>
                 <option @if($people->country=="Đà Nẵng") selected @endif>Đà Nẵng</option>
                 <option @if($people->country=="Huế") selected @endif>Huế</option>
@@ -32,7 +32,11 @@
         </div>
         @foreach($regions as $region)
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="{{$region->region_id}}" name="region">
+                <input class="form-check-input" type="checkbox" value="{{$region->region_id}}" name="region"
+                       @if($people->region_id == $region->region_id)
+                       checked
+                    @endif
+                >
                 <label class="form-check-label" for="{{$region->region_id}}">
                     {{$region->region_Name}}
                 </label>
