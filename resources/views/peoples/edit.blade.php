@@ -32,8 +32,8 @@
         </div>
         @foreach($regions as $region)
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="{{$region->region_id}}" name="region"
-                       @if($people->region_id == $region->region_id)
+                <input class="form-check-input" type="checkbox" value="{{$region->id}}" name="region"
+                       @if($people->region_id == $region->id)
                        checked
                     @endif
                 >

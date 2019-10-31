@@ -15,7 +15,7 @@ class AddCollumnRegionToPeoples extends Migration
     {
         Schema::table('peoples', function (Blueprint $table) {
             $table->unsignedBigInteger('region_id')->after('image')->nullable();
-            $table->foreign('region_id')->references('region_id')->on('regions')->onDelete('cascade');
+            $table->foreign('region_id')->references('id')->on('regions')->onDelete('cascade');
         });
     }
 

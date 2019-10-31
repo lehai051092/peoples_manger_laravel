@@ -22,6 +22,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::prefix('regions')->group(function (){
+    Route::get('list','RegionController@index')->name('regions.index');
+    Route::get('peoplesInRegion/{id}','RegionController@peoplesInRegion')->name('regions.peoples');
+});
+
 Route::prefix('peoples')->group(function (){
     Route::get('list','PeopleManagerController@index')->name('peoples.index');
     Route::get('add','PeopleManagerController@add')->name('peoples.add');

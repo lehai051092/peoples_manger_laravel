@@ -7,15 +7,22 @@
             <input type="text" class="form-control" name="name"
                    @if($errors->has('name'))
                    style="border: solid red"
-                @endif
+                   @endif
             >
             @if($errors->has('name'))
-                <p class="text-danger"><img src="https://img.icons8.com/cute-clipart/64/000000/warning-shield.png"> {{$errors->first('name')}}</p>
+                <p class="text-danger">
+                    <img src="https://img.icons8.com/cute-clipart/64/000000/warning-shield.png"> {{$errors->first('name')}}
+                </p>
             @endif
         </div>
         <div class="form-group">
             <label>Email</label>
-            <input type="email" class="form-control" name="email" placeholder="abc@abc.com">
+            <input type="text" class="form-control" name="email" placeholder="abc@abc.com">
+            @if($errors->has('email'))
+                <p class="text-danger"><img
+                        src="https://img.icons8.com/cute-clipart/64/000000/warning-shield.png"> {{$errors->first('email')}}
+                </p>
+            @endif
         </div>
         <div class="form-group">
             <label>Age</label>
@@ -38,8 +45,8 @@
 
         @foreach($regions as $region)
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="{{$region->region_id}}" name="region">
-                <label class="form-check-label" for="{{$region->region_id}}">
+                <input class="form-check-input" type="checkbox" value="{{$region->id}}" name="region">
+                <label class="form-check-label" for="{{$region->id}}">
                     {{$region->region_Name}}
                 </label>
             </div>

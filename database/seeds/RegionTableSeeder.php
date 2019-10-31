@@ -13,17 +13,17 @@ class RegionTableSeeder extends Seeder
     public function run()
     {
         DB::table('regions')->insert([
-            "region_id" => "1",
+            "id" => "1",
             "region_Name" => "Miền Bắc",
         ]);
 
         DB::table('regions')->insert([
-            "region_id" => "2",
+            "id" => "2",
             "region_Name" => "Miền Trung",
         ]);
 
         DB::table('regions')->insert([
-            "region_id" => "3",
+            "id" => "3",
             "region_Name" => "Miền Nam",
         ]);
     }

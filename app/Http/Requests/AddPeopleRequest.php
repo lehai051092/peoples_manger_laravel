@@ -24,7 +24,9 @@ class AddPeopleRequest extends FormRequest
     public function rules()
     {
         return [
-            "name" => "required|min:3|max:8"
+            "name" => "required|min:3|max:8",
+            "email" => "required|unique:peoples,email|email",
+            "age" => "required"
         ];
     }
 }
